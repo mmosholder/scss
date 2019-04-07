@@ -1,0 +1,186 @@
+//
+// Spacing Classes
+// --------------------------------------------------
+/* stylelint-disable */
+// Margin bottom
+@include generate-breakpoint-prefixes {
+  @for $i from 1 through 60 {
+    $i: $i * 5;
+
+    &mb-#{$i} {
+      margin-bottom: ($i)+px;
+    }
+  }
+}
+
+// No Margin bottom
+@include generate-breakpoint-prefixes {
+  &mb-0 {
+    margin-bottom: 0;
+  }
+}
+
+// Negative margin bottom
+@include generate-breakpoint-prefixes {
+  @for $i from 1 through 60 {
+    $i: $i * 5;
+
+    &nmb-#{$i} {
+      margin-bottom: -($i)+px;
+    }
+  }
+}
+
+// Margin top
+@include generate-breakpoint-prefixes {
+  @for $i from 1 through 60 {
+    $i: $i * 5;
+
+    &mt-#{$i} {
+      margin-top: ($i)+px;
+    }
+  }
+}
+
+// No Margin top
+@include generate-breakpoint-prefixes {
+  &mt-0 {
+    margin-top: 0;
+  }
+}
+
+// Negative margin top
+@include generate-breakpoint-prefixes {
+  @for $i from 1 through 60 {
+    $i: $i * 5;
+
+    &nmt-#{$i} {
+      margin-top: -($i)+px;
+    }
+  }
+}
+
+// Margin right
+@include generate-breakpoint-prefixes {
+  @for $i from 1 through 60 {
+    $i: $i * 5;
+
+    &mr-#{$i} {
+      margin-right: ($i)+px;
+    }
+  }
+}
+
+// No Margin left
+@include generate-breakpoint-prefixes {
+  &mb-0 {
+    margin-left: 0;
+  }
+}
+
+// Margin left
+@include generate-breakpoint-prefixes {
+  @for $i from 1 through 60 {
+    $i: $i * 5;
+
+    &ml-#{$i} {
+      margin-left: ($i)+px;
+    }
+  }
+}
+
+// Padding bottom
+@include generate-breakpoint-prefixes {
+  @for $i from 1 through 60 {
+    $i: $i * 5;
+
+    &pb-#{$i} {
+      padding-bottom: ($i)+px;
+    }
+  }
+}
+
+// No padding bottom
+@include generate-breakpoint-prefixes {
+  &pb-0 {
+    padding-bottom: 0;
+  }
+}
+
+// Negative padding bottom
+@include generate-breakpoint-prefixes {
+  @for $i from 1 through 60 {
+    $i: $i * 5;
+
+    &npb-#{$i} {
+      padding-bottom: -($i)+px;
+    }
+  }
+}
+
+// Padding top
+@include generate-breakpoint-prefixes {
+  @for $i from 1 through 60 {
+    $i: $i * 5;
+
+    &pt-#{$i} {
+      padding-top: ($i)+px;
+    }
+  }
+}
+
+// No padding top
+@include generate-breakpoint-prefixes {
+  &pb-0 {
+    padding-top: 0;
+  }
+}
+
+
+// Negative padding top
+@include generate-breakpoint-prefixes {
+  @for $i from 1 through 60 {
+    $i: $i * 5;
+
+    &npt-#{$i} {
+      padding-top: -($i)+px;
+    }
+  }
+}
+
+// Padding left
+@include generate-breakpoint-prefixes {
+  @for $i from 0 through 60 {
+    $i: $i * 5;
+
+    &pl-#{$i} {
+      padding-left: ($i)+px;
+    }
+  }
+}
+
+// No padding right
+@include generate-breakpoint-prefixes {
+  &pb-0 {
+    padding-right: 0;
+  }
+}
+
+// Padding right
+@include generate-breakpoint-prefixes {
+  @for $i from 0 through 60 {
+    $i: $i * 5;
+
+    &pr-#{$i} {
+      padding-right: ($i)+px;
+    }
+  }
+}
+
+// No padding left
+@include generate-breakpoint-prefixes {
+  &pb-0 {
+    padding-left: 0;
+  }
+}
+/* stylelint-enable */

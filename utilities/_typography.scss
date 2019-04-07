@@ -1,0 +1,91 @@
+// Typography base text & title classes
+// ------------------------------------
+
+.title {
+}
+
+.text {
+
+}
+
+.link {
+
+}
+
+// Typography Emphasis and Styling
+// -------------------------
+
+.italic {
+  font-style: italic;
+}
+
+.caps {
+  text-transform: uppercase;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.decoration-none {
+  text-decoration: none;
+}
+
+.decoration-underline {
+  text-decoration: underline;
+}
+
+.decoration-line-through {
+  text-decoration: line-through;
+}
+
+// Typography Alignment
+// -------------------------
+
+.text-center {
+  text-align: center;
+}
+
+// Text center
+@include generate-breakpoint-prefixes {
+
+  &text-center {
+    text-align: center;
+  }
+}
+
+.text-left {
+  text-align: left;
+}
+
+//text left
+@include generate-breakpoint-prefixes {
+
+  &text-left {
+    text-align: left;
+  }
+}
+
+.text-right {
+  text-align: right;
+}
+
+// List styles
+// -------------------------
+// Unstyled keeps list items block level,
+// just removes default browser padding and list-style
+
+.list-unstyled {
+  margin-left: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.list-flex {
+  display: flex;
+}
+
+
+.pointer {
+  cursor: pointer;
+}

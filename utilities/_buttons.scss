@@ -1,0 +1,93 @@
+//
+// Button Classes
+// --------------------------------------------------
+
+// Reset Button
+// -------------------------
+// In an article on CSS-Tricks
+// (http://css-tricks.com/use-button-element/),
+// Chris Coyier explains that:
+// "if a button doesn’t have a meaningful
+// href, it’s a <button>"; which makes sense.
+//
+// This placeholder resets <button>'s
+// default styling, so we can use
+// <button>s where it makes without
+// worrying about the styling.
+
+@mixin button-reset {
+  cursor: pointer;
+  padding: 0;
+  background-color: transparent;
+  // Reset unusual Firefox-on-Android default style;
+  // https://github.com/necolas/normalize.css/issues/214
+  background-image: none;
+  border: 1px solid transparent;
+
+  &:active {
+    outline: 0;
+  }
+}
+
+// Button Style Mixin
+// -------------------------
+// generates every style needed for a new button
+// when passed the apropriate colors
+//
+// $fill-color     - background color for the button
+// $text-color     - button text color
+// $secondary-text-color       - text color used with secondary modifier class (defaults to fill color)
+// $secondary-hover-text-color - background color used with secondary modifier class (defaults to text color)
+
+@mixin button-style(
+  $fill-color,
+  $text-color,
+  $secondary-text-color: $fill-color,
+  $secondary-hover-text-color: $text-color
+) {
+  //button state colors
+  $hover-background-color: darken($fill-color, 15%);
+  $active-background-color: darken($fill-color, 15%);
+  $secondary-active-background-color: darken($fill-color, 15%);
+
+  //base style
+  background-color: $fill-color;
+  color: $text-color;
+  border-color: $secondary-text-color;
+  border: 1px solid transparent;
+  transition: background-color 240ms $t-1;
+
+  &:hover,
+  &:focus {
+    background-color: $hover-background-color;
+    transition: background-color 300ms $t-1;
+  }
+
+  &:active { background-color: $active-background-color; }
+}
+
+.button {
+  @include button-reset;
+  border-radius: 2px;
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 1px solid transparent;
+  text-align: center;
+  width: 100%;
+  display: block;
+
+  @include mq($from: 600px) {
+    width: auto;
+    display: inline-block;
+  }
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+
+  &:hover {
+    background-color: #ccc;
+  }
+}

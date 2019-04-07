@@ -1,0 +1,98 @@
+// Site Wide Variables
+// -------------------------
+
+// Controls whether or not we use font sizing.
+// See the font-smoothing mixin in _mixins.scss
+$font-smoothing: true !default;
+
+$base-font-size: 16px;
+
+$bold: 700;
+$regular: 400;
+
+// Borders
+// -------------------------
+
+$border-light: 1px solid rgba(255, 255, 255, 1) !default;
+
+// Breakpoints
+// -------------------------
+$breakpoint-xsmall: 500px;
+$breakpoint-small: 768px;
+$breakpoint-medium: 1025px;
+$breakpoint-large: 1200px;
+$breakpoint-xlarge: 1600px;
+
+// Spacing
+// -------------------------
+
+$space-05: 0.25rem !default; // 4px
+$space-1: 0.5rem !default; // 8px
+$space-2: 1rem !default; // 16px
+$space-3: 1.5rem !default; // 24px
+$space-4: 2rem !default; // 32px
+$space-5: 3rem !default; // 48px
+$space-6: 4.5rem !default; // 72px
+
+// Z-index
+// -------------------------
+$z1: 100 !default;
+$z2: 200 !default;
+$z3: 300 !default;
+$z4: 400 !default;
+$z5: 500 !default;
+$z6: 600 !default;
+$z10: 1000 !default;
+
+// Transitions
+//--------------------------
+$t-1: cubic-bezier(0.2, 0.3, 0.25, 0.9);
+
+// Colors
+// -------------------------
+
+// Fills
+$fill-red: #E16767 !default;
+$fill-black: #000 !default;
+
+// Type Colors
+$text-white: #fff !default;
+$text-black: #000 !default;
+
+// Border Colors
+$border-gray: #979797 !default;
+
+// Shadows
+// -------------------------
+$card-shadow: 0 25px 50px 0 rgba(0, 0, 0, 0.25);
+$box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+$tile-shadow: 0 25px 50px 0 rgba(0, 0, 0, 0.25);
+$text-shadow: -3px 2px 0 #222222;
+$condensed-text-shadow: -2px 2px 0 #222222;
+
+// Line height
+// -------------------------
+// Using a unitless system for consistency.
+// https://css-tricks.com/almanac/properties/l/line-height/
+
+$line-height-1: 1.2 !default; // set on h1-h3 and .text-1-.text-3
+$line-height-2: 1.3 !default; // set on h4-h6 and .text-4-.text-6
+$line-height-3: 1.5 !default; // default line-height set on the body
+
+// Line heights specific to forms, buttons and tags.
+$line-height-form: 1.5rem !default;
+$line-height-form-small: 1.25rem !default;
+
+// Disabled opacity for buttons, forms, pagination
+$opacity-disabled: 0.3 !default;
+
+// SVG
+// -------------------------
+// encoding this as utf8 is good!
+// https://css-tricks.com/probably-dont-base64-svg/
+// but like url encode it first or IE/FF will hate you
+// http://codepen.io/yoksel/details/JDqvs/
+// svg icons saved as variables
+
+$down-caret: "data:image/svg+xml, %3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20width%3D%2712%27%20height%3D%278%27%20viewBox%3D%270%200%20488%20285%27%3E%3Cpath%20d%3D%27M483.11%2029.381l-24.449-24.485c-2.934-2.938-7.335-4.897-11.246-4.897-3.912%200-8.313%201.959-11.246%204.897l-192.168%20192.448-192.168-192.448c-2.934-2.938-7.335-4.897-11.246-4.897-4.401%200-8.313%201.959-11.246%204.897l-24.449%2024.485c-2.934%202.938-4.89%207.345-4.89%2011.263s1.956%208.325%204.89%2011.263l227.864%20228.196c2.934%202.938%207.335%204.897%2011.246%204.897%203.912%200%208.313-1.959%2011.246-4.897l227.864-228.196c2.934-2.938%204.89-7.345%204.89-11.263s-1.956-8.325-4.89-11.263z%27%20fill%3D%27%23000%27/%3E%3C/svg%3E" !default;
+$right-arrow: "data:image/svg+xml, %3Csvg%20width%3D%2229%22%20height%3D%2216%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%0A%20%20%3Cpath%20d%3D%22M24.536%209.147l-4.975%204.895a1.135%201.135%200%200%200%200%201.622%201.18%201.18%200%200%200%201.649%200l6.962-6.852L29%208l-.823-.81L21.21.335A1.171%201.171%200%200%200%2020.384%200c-.298%200-.597.11-.823.335a1.135%201.135%200%200%200%200%201.622l4.975%204.895H1.166C.522%206.852%200%207.366%200%208c0%20.633.522%201.147%201.166%201.147h23.37z%22%20fill%3D%22%236C8CA0%22%20fill-rule%3D%22evenodd%22/%3E%0A%3C/svg%3E%0A" !default;
